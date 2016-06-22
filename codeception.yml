@@ -1,0 +1,18 @@
+actor: Tester
+paths:
+    tests: Tests
+    log: Tests/_Output
+    data: Tests/_Data
+    support: Tests/_Support
+    envs: Tests/_Environments
+settings:
+    bootstrap: CodeceptionBootstrap.php
+    colors: true
+    memory_limit: 1024M
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+        - Codeception\Extension\Recorder
+    config:
+      Codeception\Extension\Recorder:
+        delete_successful: true

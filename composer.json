@@ -1,0 +1,18 @@
+{
+    "description": "Codeception Wrapper for Flow",
+    "type": "neos-package",
+    "name": "flowpack/codeception",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Flowpack\\Codeception": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Flowpack.Codeception"
+        }
+    }
+}
